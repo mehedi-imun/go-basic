@@ -3,15 +3,14 @@ package main
 import (
 	"fmt"
 )
-
+var a int = 40
 func main (){
-	var a int = 40
-
-	if a > 20 {
-		a := 10
-		fmt.Println(a)
-	}
-
-fmt.Println(a)
+	
+	fmt.Println(a)
 }  
 
+func init() {
+	fmt.Println("i'm form init");
+	a = 100
+	
+}
